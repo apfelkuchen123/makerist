@@ -26,3 +26,7 @@ einfach schließen.
 werden, oder du lädst das Schnittmuster manuell herunter.
 
 Viel Spaß 🙂
+
+<aside class="warning">ACHTUNG AUF EIGENE GEFAHR</aside>:
+Autodownloader lädt alle Dateien und springt dann zur nächsten Seite und immer so weiter:
+https://github.com/apfelkuchen123/makerist/raw/refs/heads/main/makerist-auto-download.user.js
