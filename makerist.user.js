@@ -19,8 +19,8 @@ function afterSeconds(waitFor, callBack){
 
   let dlInterval = setInterval(function(){
     if(secondsCount>0){
-      secondsCount -= 1;
       document.getElementById('downloadPageButton').innerHTML = 'Downloading ('+secondsCount+')';
+      secondsCount -= 1;
     }else{
       document.getElementById('downloadPageButton').innerHTML = 'Download Page';
       clearInterval(dlInterval);
