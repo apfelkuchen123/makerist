@@ -6,6 +6,7 @@
 // @version     1.0
 // @author      Apfelkuchen
 // @description 24/01/2025, 12:33:12
+// @downloadUrl https://github.com/apfelkuchen123/makerist/raw/refs/heads/main/makerist.user.js
 // ==/UserScript==
 
 function downloadPdfs(){
