@@ -9,9 +9,14 @@
 // @downloadUrl https://github.com/apfelkuchen123/makerist/raw/refs/heads/main/makerist-auto-download.user.js
 // ==/UserScript==
 
+function nextPage(){
+  document.getElementsByClassName('pagy-nav')[0].getElementsByClassName('next')[0].firstChild.click();
+}
+
 function downloadPdfs(){
   for(let child of document.getElementsByClassName('products-wrapper')[0].children){ let url = child.lastChild.firstChild.href; let name = url.split('/')[5];
   window.open('https://www.makerist.de/pattern_pdfs/'+name+'/download', '_blank');}
+  setTimeout(nextPage, 1000);
 }
 
 function afterSeconds(waitFor, callBack){
