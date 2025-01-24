@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name        makerist downloader
+// @name        makerist auto downloader
 // @namespace   Violentmonkey Scripts
 // @match       https://www.makerist.de/my/meine-anleitungen*
 // @grant       none
 // @version     1.0
 // @author      Apfelkuchen
 // @description 24/01/2025, 12:33:12
-// @downloadUrl https://github.com/apfelkuchen123/makerist/raw/refs/heads/main/makerist.user.js
+// @downloadUrl https://github.com/apfelkuchen123/makerist/raw/refs/heads/main/makerist-auto-download.user.js
 // ==/UserScript==
 
 function downloadPdfs(){
@@ -39,13 +39,4 @@ function downloadAllFromPage(){
   afterSeconds(14, downloadPdfs);
 }
 
-let dlButton = document.createElement('div');
-dlButton.className= 'b-nav-filter-box';
-dlButton.onclick = downloadAllFromPage;
-
-dlButton.innerHTML = '<div class="b-nav-filter-header button"><span class="b-nav-filter-name" id="downloadPageButton">Download Page</span></div>';
-
-let filterBox = document.getElementsByClassName('b-nav-filters')[0].getElementsByClassName('catalog-filter-box')[0];
-filterBox.appendChild(dlButton);
-
-
+downloadAllFromPage();
